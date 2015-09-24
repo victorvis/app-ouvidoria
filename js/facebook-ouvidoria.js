@@ -1,10 +1,6 @@
 ﻿$(document).ready(function () {
     H5F.setup(jQuery('form[data-toggle="validator"]'));
 
-    $('#authModal').on('hidden.bs.modal', function (e) {
-        checkLoginState();
-    })
-
     // Contador de caracateres
     $(document).on("input", "[id$=descricao]", function () {
         var limite = $("[id$=descricao]").attr("maxlength");
@@ -21,6 +17,7 @@
 
 function checkLoginState() {
     FB.getLoginStatus(function (response) {
+		console.log(response);
         if (response.status == 'connected') {
             onLogin(response);
         } else {

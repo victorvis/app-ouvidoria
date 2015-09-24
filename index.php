@@ -1,8 +1,8 @@
 <?php 
 	require_once "recaptchalib.php";
 	
-	$siteKey = "6LcqNg0TAAAAAAxjF7_U_wfkGfgbSlLDyWIq4Nsy";
-	$secret = "6LcqNg0TAAAAADaC9IwqBczACv4QzoWvP4E1sHxR";
+	$siteKey = "6LfEOw0TAAAAAAP4iOrnI5VLhmJLmBJKj_gYByRM";
+	$secret = "6LfEOw0TAAAAAMYcmT6agpx11LcrrMdCuorsywli";
 
 	$resp = "";
 	$reCaptcha = new ReCaptcha($secret);
@@ -68,7 +68,7 @@
 							<p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula. </p>
 							<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
 							<p style="padding:10px;" class="text-center">
-								<a href="app.php">click aqui para retornar</a>
+								<a href="index.php">click aqui para retornar</a>
 							</p>
 						</div>
 					</div>
@@ -144,7 +144,7 @@
 							</div>
 
 							<div class="form-group form-group-sm">
-								<center><div id="googleRecapctha" class="g-recaptcha" data-sitekey="6LcqNg0TAAAAAAxjF7_U_wfkGfgbSlLDyWIq4Nsy"></div></center>
+								<center><div id="googleRecapctha" class="g-recaptcha" data-sitekey="<?php echo $siteKey ?>"></div></center>
 							</div>
 
 							<div class="form-group">
